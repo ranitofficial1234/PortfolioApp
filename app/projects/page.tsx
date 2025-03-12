@@ -31,7 +31,7 @@ const projects = [
         <SiTailwindcss className="text-cyan-400 text-3xl hover:scale-110 transition-transform" />
       </a>,
     ],
-    repoLink: "https://github.com/1234danav",
+    repoLink: "https://github.com/ranitofficial1234/Flavoro-food",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const projects = [
         <SiVercel className="text-black text-3xl hover:scale-110 transition-transform" />
       </a>,
     ],
-    repoLink: "https://github.com/1234danav",
+    repoLink: "https://github.com/ranitofficial1234/PortfolioApp",
   },
   {
     id: 3,
@@ -75,7 +75,7 @@ const projects = [
         <SiTailwindcss className="text-cyan-400 text-3xl hover:scale-110 transition-transform" />
       </a>,
     ],
-    repoLink: "https://github.com/1234danav",
+    repoLink: "https://github.com/ranitofficial1234/cometics-web-app",
   },
 ];
 

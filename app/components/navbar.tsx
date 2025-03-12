@@ -22,7 +22,7 @@ const Socials: Social[] = [
   {
     name: "Github",
     src: "/images/github.svg",
-    url: "https://github.com/1234danav",
+    url: "https://github.com/ranitofficial1234",
   },
 ];
 

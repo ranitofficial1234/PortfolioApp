@@ -1,22 +1,23 @@
 import React from 'react'
-import Image from "next/image";
-import Link from "next/link";
-import Navbar from "../components/navbar";
+import Image from 'next/image'
+import Link from 'next/link'
+import Navbar from '../components/navbar'
+
 
 const Page = () => {
   return (
     <main className="w-screen h-screen relative">
-      <Navbar/>
+      <Navbar />
       <div
         className="flex items-center w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: `url("/images/bg.jpg")` }}
+        style={{ backgroundImage: `url("/images/homebg.jpg")` }}
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-25 flex flex-col gap-5 z-[10] max-w-[750px]">
-          <h1 className="text-[50px] text-black-500 font-semibold">
+          <h1 className="text-[50px] text-w font-semibold text-amber-50">
             Crafting seamless and dynamic web experiences with the power of the
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-600">
-              {" "}
-              MERN stack{" "}
+              {' '}
+              MERN stack{' '}
             </span>
             🚀
           </h1>
@@ -57,15 +58,6 @@ const Page = () => {
           height={1000}
           width={1000}
           className="absolute top-0 left-[150px] z-[10] opacity-80 shooting-star"
-        />
-      </div>
-      <div className="absolute bottom-[147px] right-0 z-[10] pr-[90px]">
-        <Image
-          className="rotate-[17deg] pb-108 mr-80"
-          src="/images/horse.png"
-          alt="horse"
-          height={150}
-          width={150}
         />
       </div>
     </main>

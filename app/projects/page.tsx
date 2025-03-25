@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+'use client'
+import React from 'react'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
 import {
   SiReact,
   SiRedux,
@@ -10,80 +10,130 @@ import {
   SiTypescript,
   SiVercel,
   SiGithub,
-} from "react-icons/si";
+} from 'react-icons/si'
 
 const projects = [
   {
     id: 1,
-    image: "/images/food1.png",
-    alt: "food",
-    extraImages: ["/images/food2.png", "/images/food3.png"], 
+    image: '/images/food1.png',
+    alt: 'food',
+    extraImages: ['/images/food2.png', '/images/food3.png'],
     description:
-      "Order delicious meals with fresh ingredients and fast delivery. Enjoy a seamless online ordering experience.",
+      'Order delicious meals with fresh ingredients and fast delivery. Enjoy a seamless online ordering experience.',
     technologies: [
-      <a key="react" href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="react"
+        href="https://react.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiReact className="text-blue-500 text-3xl hover:scale-110 transition-transform" />
       </a>,
-      <a key="redux" href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="redux"
+        href="https://redux.js.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiRedux className="text-purple-600 text-3xl hover:scale-110 transition-transform" />
       </a>,
-      <a key="tailwind" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="tailwind"
+        href="https://tailwindcss.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiTailwindcss className="text-cyan-400 text-3xl hover:scale-110 transition-transform" />
       </a>,
     ],
-    repoLink: "https://github.com/ranitofficial1234/Flavoro-food",
+    repoLink: 'https://github.com/ranitofficial1234/Flavoro-food',
   },
   {
     id: 2,
-    image: "/images/portfolio.png",
-    alt: "portfolio",
-    extraImages: ["/images/portfolio2.png", "/images/portfolio3.png"],
+    image: '/images/portfolio.png',
+    alt: 'portfolio',
+    extraImages: ['/images/portfolio2.png', '/images/portfolio3.png'],
     description:
-      "A modern portfolio website showcasing creativity, skills, and projects in a clean and interactive UI.",
+      'A modern portfolio website showcasing creativity, skills, and projects in a clean and interactive UI.',
     technologies: [
-      <a key="nextjs" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="nextjs"
+        href="https://nextjs.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiNextdotjs className="text-black text-3xl hover:scale-110 transition-transform" />
       </a>,
-      <a key="typescript" href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="typescript"
+        href="https://www.typescriptlang.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiTypescript className="text-blue-600 text-3xl hover:scale-110 transition-transform" />
       </a>,
-      <a key="tailwind" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="tailwind"
+        href="https://tailwindcss.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiTailwindcss className="text-cyan-400 text-3xl hover:scale-110 transition-transform" />
       </a>,
-      <a key="vercel" href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="vercel"
+        href="https://vercel.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiVercel className="text-black text-3xl hover:scale-110 transition-transform" />
       </a>,
     ],
-    repoLink: "https://github.com/ranitofficial1234/PortfolioApp",
+    repoLink: 'https://github.com/ranitofficial1234/PortfolioApp',
   },
   {
     id: 3,
-    image: "/images/cosmetics.png",
-    alt: "cosmetics",
-    extraImages: ["/images/makeup3.png", "/images/makeup.png"],
+    image: '/images/cosmetics.png',
+    alt: 'cosmetics',
+    extraImages: ['/images/makeup3.png', '/images/makeup.png'],
     description:
-      "Discover beauty with premium cosmetics. Browse high-quality skincare and makeup products with ease.",
+      'Discover beauty with premium cosmetics. Browse high-quality skincare and makeup products with ease.',
     technologies: [
-      <a key="react" href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="react"
+        href="https://react.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiReact className="text-blue-500 text-3xl hover:scale-110 transition-transform" />
       </a>,
-      <a key="redux" href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
+      <a
+        key="redux"
+        href="https://redux.js.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SiRedux className="text-purple-600 text-3xl hover:scale-110 transition-transform" />
       </a>,
-      <a key="tailwind" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"
-       className="mt-3 flex items-center justify-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-600 text-lg font-semibold">
+      <a
+        key="tailwind"
+        href="https://tailwindcss.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-3 flex items-center justify-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-600 text-lg font-semibold"
+      >
         <SiTailwindcss className="text-cyan-400 text-3xl hover:scale-110 transition-transform" />
       </a>,
     ],
-    repoLink: "https://github.com/ranitofficial1234/cometics-web-app",
+    repoLink: 'https://github.com/ranitofficial1234/cometics-web-app',
   },
-];
+]
 
 const Page: React.FC = () => {
   return (
     <motion.main
       className="w-screen min-h-screen py-10 relative bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url("/images/project.webp")` }}
+      style={{ backgroundImage: `url("/images/projecttbg.jpg")` }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -92,10 +142,7 @@ const Page: React.FC = () => {
         Portfolio
       </h1>
 
-      <div
-        className="flex flex-wrap justify-center gap-12 px-6"
-       
-      >
+      <div className="flex flex-wrap justify-center gap-12 px-6">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
@@ -105,23 +152,36 @@ const Page: React.FC = () => {
             transition={{ delay: index * 0.2, duration: 0.8 }}
           >
             {/* Main Image */}
-            <Image src={project.image} alt={project.alt} height={160} width={280} className="rounded-lg" />
-            
+            <Image
+              src={project.image}
+              alt={project.alt}
+              height={160}
+              width={280}
+              className="rounded-lg"
+            />
+
             {/* Extra Images */}
             <div className="flex gap-2 mt-3">
               {project.extraImages.map((img, i) => (
-                <Image key={i} src={img} alt={`extra-${i}`} height={100} width={130} className="rounded-lg" />
+                <Image
+                  key={i}
+                  src={img}
+                  alt={`extra-${i}`}
+                  height={100}
+                  width={130}
+                  className="rounded-lg"
+                />
               ))}
             </div>
 
-            
             <p className="text-center mt-3">{project.description}</p>
 
-          
             <p className="pt-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-600">
               Technologies used
             </p>
-            <div className="flex items-center gap-4 mt-2">{project.technologies}</div>
+            <div className="flex items-center gap-4 mt-2">
+              {project.technologies}
+            </div>
 
             <a
               href={project.repoLink}
@@ -135,7 +195,7 @@ const Page: React.FC = () => {
         ))}
       </div>
     </motion.main>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

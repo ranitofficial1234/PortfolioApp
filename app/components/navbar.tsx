@@ -1,30 +1,37 @@
-import Image from "next/image";
-import React from "react";
+import React from 'react'
+import { FaLinkedin, FaFacebook, FaGithub } from 'react-icons/fa'
+import Image from 'next/image'
 
 interface Social {
-  name: string;
-  src: string;
-  url: string;
+  name: string
+  icon: JSX.Element
+  url: string
 }
 
-//  Socials array
+//Socials array
 const Socials: Social[] = [
   {
-    name: "Linkedin",
-    src: "/images/linkedin.svg",
-    url: "https://www.linkedin.com/in/ranit-pramanik-006454290",
+    name: 'Linkedin',
+    icon: (
+      <FaLinkedin className="text-blue-500 hover:text-blue-400 transition-colors duration-200" />
+    ),
+    url: 'https://www.linkedin.com/in/ranit-pramanik-006454290',
   },
   {
-    name: "Facebook",
-    src: "/images/facebook.svg",
-    url: "https://www.facebook.com/share/1B4z42HrJe/",
+    name: 'Facebook',
+    icon: (
+      <FaFacebook className="text-blue-600 hover:text-blue-500 transition-colors duration-200" />
+    ),
+    url: 'https://www.facebook.com/share/1B4z42HrJe/',
   },
   {
-    name: "Github",
-    src: "/images/github.svg",
-    url: "https://github.com/ranitofficial1234",
+    name: 'Github',
+    icon: (
+      <FaGithub className="text-white hover:text-gray-400 transition-colors duration-200" />
+    ),
+    url: 'https://github.com/ranitofficial1234',
   },
-];
+]
 
 const Navbar: React.FC = () => {
   return (
@@ -41,7 +48,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <h1 className="text-white text-[18px] sm:text-[22px] md:text-[35px] font-semibold">
-          Ranit<span className="text-white">’</span>s{" "}
+          Ranit<span className="text-white">’</span>s{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             Portfolio
           </span>
@@ -49,25 +56,20 @@ const Navbar: React.FC = () => {
       </div>
 
       <div className="flex flex-wrap gap-3 sm:gap-5">
-        {Socials.map((social) => (
+        {Socials.map(({ name, icon, url }) => (
           <a
-            key={social.name}
-            href={social.url}
+            key={name}
+            href={url}
             target="_blank"
             rel="noopener noreferrer"
+            className="text-2xl"
           >
-            <Image
-              src={social.src}
-              alt={social.name}
-              width={24}
-              height={24}
-              className="sm:w-[28px] sm:h-[28px] cursor-pointer hover:scale-110 transition-transform duration-200"
-            />
+            {icon}
           </a>
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

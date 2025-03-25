@@ -1,16 +1,16 @@
-"use client";
+'use client'
 
-import { Download } from "lucide-react";
+import { Download } from 'lucide-react'
 
 const CVDownload: React.FC = () => {
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/cv.pdf"; 
-    link.download = "Ranit_Pramanik_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    const link = document.createElement('a')
+    link.href = '/cv.pdf'
+    link.download = 'Ranit_Pramanik_CV.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <div className="fixed bottom-5 left-5 z-50 pl-12">
@@ -22,7 +22,7 @@ const CVDownload: React.FC = () => {
         Download CV
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default CVDownload;
+export default CVDownload

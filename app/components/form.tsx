@@ -1,11 +1,11 @@
-"use client";
-import React, { FormEvent } from "react";
+'use client'
+import React, { FormEvent } from 'react'
 
 const ContactForm: React.FC = () => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    alert("Thank you! Message received successfully.");
-  };
+    event.preventDefault()
+    alert('Thank you! Message received successfully.')
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -43,7 +43,7 @@ const ContactForm: React.FC = () => {
         Send a message
       </button>
     </form>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
